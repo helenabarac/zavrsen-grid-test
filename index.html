@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>   
+        .container {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          grid-template-rows: auto auto auto auto auto;
+          text-align: center;
+          max-width: 650px;
+          margin: auto;
+        }
+        .Header {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: lightskyblue;
+            padding: 10px;
+            text-align: center;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .Path {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: lightpink;
+            padding: 10px;
+            text-align: left;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .Docktop {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: yellow;
+            padding: 10px;
+            text-align: left;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .Content {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 8;
+            background-color: lightgray;
+            padding: 10px;
+            text-align: left;
+        }
+        .Dockright {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 8;
+            background-color: lightgreen;
+            padding: 10px;
+            text-align: left;
+        }
+        .Footer {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 8;
+            grid-row-end: 9;
+            background-color: lightsalmon;
+            padding: 10px;
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+         .container {
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+        }
+
+        .Header,
+        .Path,
+        .Docktop,
+        .Footer {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        height: auto;
+        }
+
+        .Content,
+        .Dockright {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        height: 300px; 
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="Header">Tulumbe</div>
+       <div class="Path">Sastojci za tijesto:
+        <ul>
+            <li>250 ml vode</li>
+            <li>250 ml mlijeka</li>
+            <li>1 filđan ulja</li>
+            <li>1 filđan šećera</li>
+            <li>18 žlica brašna ili 300 g</li>
+            <li>1/2 praška za pecivo</li>
+            <li>4 jaja</li>
+        </ul>
+       </div>
+       <div class="Docktop">Sastojci za zaljev:
+        <ul>
+            <li>2 čaše vode</li>
+            <li>4 čaše šećera</li>
+            <li>1 vanilin šećer</li>
+            <li>1 feta limuna</li>
+            <li>ulje za prženje tulumbi, najmanje 700 ml</li>
+        </ul>
+       </div>
+       <div class="Content">Priprema <br>
+        <ol>
+            <li>Zaljev:
+                Sve sastojke za zaljev stavite u posudu i kuhajte. Odokativni omjer vode i šećera je da vode uvijek treba biti 2 prsta poviše šećera. Pustite da se sve kuha na laganoj vatri 20-30 minuta nakon što prokuha. Zaljev ne smije biti rijedak, niti pregust, već fino sirupast.
+                Ohladite ga na soboj temperaturi.
+                Zaljev se može skuhati dan ranije.</li>
+            <li>
+                Tijesto:
+                Zakuhajte vodu, mlijeko, ulje i šećer.
+                Pomiješajte brašno i prašak za pecivo.
+                Maknite posudu s vatre pa dodajte brašno SVE odjednom, ne malo po malo. Snažno miješajte drvenom kuhačom dok se tijesto ne ujednači, zatim vratite na vatru i kuhajte na laganoj vatri stalno miješajući nekoliko minuta dok se tijesto ne počne odvajati od posude.
+                Ohladite. Dok se tijesto hladi povremeno ga promiješajte da se po vrhu ne napravi korica.
+                U hladnu smjesu dodajte 1 po 1 jaje. Svako jaje dobro umiješajte i kada se potpuno upije u tijesto, dodajte sljedeće. Tijesto će na kraju biti glatko, mekano i svilenkasto.
+            </li>
+        </ol>
+       </div>
+       <div class="Dockright"><img src="tulumbe.jpg" alt="" width="200px"></div>
+       <div class="Footer"><Footer>Izrada <br>
+        Nekoliko savjeta prije izrade:
+        Tulumbe se prže u dubokom ulju tako da plivaju u njemu.
+        Ulje za prženje tulumbi ne smije biti prevruće. Tulumbe se stavljaju u hladno ili mlako ulje pa se vatra pojača na srednje jaku. Ako je ulje prevruće, tulumbe će se napuhati i ostati šuplje u sredini. Jednako su ukusne, samo sa rupom u sredini. Osim toga, prve istisnute u ulje bi bile pečenije od onih zadnjih.
+
+        Nakon što je jedna serija tulumbi ispečena, pustite da se ulje malo ohladi prije nego što dodate sljedeću seriju.
+        Mama kaže: "Da ne bih dugo čekala dok se ulje ohladi, odlijem malo vrućeg ulja u šalicu i ulijem hladnog. Za sljedeće prženje opet odlijem malo vrućeg ulja, a ulijem ono iz šalice što se ohladilo".
+
+        Nemojte prepuniti posudu tulumbama jer će one tijekom prženja narasti pa im ostavite dovoljno slobodnog prostora za okretanje. Tulumbe će se same okretati, a po potrebi nekima treba pomoći.
+
+        Ako prstima skidate tijesto sa šprice, prste obavezno nauljite. Ako režete kuhinjskim škarama, nauljite oštrice. Tako se tijesto neće lijepiti, a otkinuti kraj tulumbi će biti gladak.
+
+        Metalnu špricu za tulumbe napunite tijestom. Tijesto istiskujte direktno u ulje, hladno ili mlako, pa pojačajte vatru na srednju. Duljina tulumbi je od 5 do 10 cm, kako tko voli.
+
+        Kad porumene sa svih strana, uključujući i rebra i utore između rebara (ovo je jako bitno jer nisu pečene dok ne dobiju boju između rebara), tulumbe izvadite šupljikavom žlicom, držite ih malo nad uljem da se ocijede i stavljajte direktno u hladni zaljev. Ostavite ih da se namaču dok se nova serija tulumbi ne ispeče. Zatim ih posložite jednu do druge u plitku posudu/tepsiju.
+        Za drugu i svaku sljedeću seriju tulumbi, ulje prohladite i ponovite cijeli postupak prženja.
+
+        Kad su sve tulumbe ispržene, zalijte ih preostalim zaljevom (u kojem su se namakale).
+        Pokrijte i ohladite na sobnoj temperaturi pa spremite u hladnjak.
+       </Footer></div>
+    </div>        
+</body>
+</html>
